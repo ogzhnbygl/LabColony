@@ -51,7 +51,7 @@ function App() {
                 .filter(item => new Date(item.removalDate).getMonth() === currentMonth)
                 .reduce((sum, item) => sum + item.count, 0),
             project: records
-                .filter(item => item.reason === 'Proje')
+                .filter(item => ['EXP-01', 'EXP-02', 'EXP-03', 'EXP-04', 'MORT-02', 'ADM-02'].includes(item.reason))
                 .reduce((sum, item) => sum + item.count, 0)
         };
     }, [records]);
