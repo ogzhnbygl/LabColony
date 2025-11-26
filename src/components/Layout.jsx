@@ -1,5 +1,4 @@
-import React from 'react';
-import { PawPrint } from 'lucide-react';
+import { Rat } from 'lucide-react';
 
 export function Layout({ children, currentView, onViewChange }) {
     return (
@@ -9,9 +8,9 @@ export function Layout({ children, currentView, onViewChange }) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="bg-indigo-600 p-2 rounded-lg text-white">
-                            <PawPrint size={24} />
+                            <Rat size={24} />
                         </div>
-                        <h1 className="text-xl font-bold text-slate-800">Dispo Raporlama</h1>
+                        <h1 className="text-xl font-bold text-slate-800">Laboratory Colony Disposition Manager</h1>
                     </div>
 
                     {/* Navigation */}
